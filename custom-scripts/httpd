@@ -2,8 +2,8 @@
 
 case "$1" in
     start)
-        echo "Iniciando busybox httpd..."
-        /usr/sbin/httpd -h /var/www
+        echo "Iniciando busybox httpd como usuario httpd..."
+        /usr/sbin/httpd -h /var/www -u httpd
         ;;
     stop)
         echo "Parando busybox httpd..."
@@ -12,7 +12,7 @@ case "$1" in
     restart)
         echo "Reiniciando busybox httpd..."
         killall httpd
-        /usr/sbin/httpd -h /var/www
+        /usr/sbin/httpd -h /var/www -u httpd
         ;;
     *)
         echo "Uso: $0 {start|stop|restart}"
