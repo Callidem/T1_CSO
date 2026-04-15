@@ -1,3 +1,6 @@
+// T1 Construção de Sistemas Operacionais - Monitor do Sistema
+// Alunos: Bruno Elkfury Monticelli, Gian Lucca Casapiccola Lucena, Pedro Henrique Nunes Oliveira, Rodrigo Susin de Cenço
+// 15/04/2026
 #include <stdio.h>
 #include <string.h>
 #include <dirent.h>
